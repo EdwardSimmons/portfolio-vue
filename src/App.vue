@@ -5,7 +5,7 @@ import HelloWorld from './components/HelloWorld.vue'
 
 <template>
   <header>
-    <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
+    <img alt="gravatar" class="avatar" src="https://www.gravatar.com/avatar/c2fcdf3b2f5771ed553bc56a50c2bfba?s=500" width="125" height="125" />
 
     <div class="wrapper">
       <HelloWorld msg="You did it!" />
@@ -26,9 +26,10 @@ header {
   max-height: 100vh;
 }
 
-.logo {
+.avatar {
   display: block;
   margin: 0 auto 2rem;
+  border-radius: 50%;
 }
 
 nav {
@@ -63,7 +64,7 @@ nav a:first-of-type {
     padding-right: calc(var(--section-gap) / 2);
   }
 
-  .logo {
+  .avatar {
     margin: 0 2rem 0 0;
   }
 
