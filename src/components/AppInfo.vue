@@ -8,6 +8,7 @@
         <slot name="heading"></slot>
       </h3>
       <slot></slot>
+      <slot name="links"></slot>
     </div>
   </div>
 </template>
@@ -20,6 +21,8 @@
 
 .details {
   flex: 1;
+  display: flex;
+  flex-direction: column;
   margin-left: 1rem;
 }
 
