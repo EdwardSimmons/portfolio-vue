@@ -1,11 +1,14 @@
 <script setup lang="ts">
 import { RouterLink, RouterView } from 'vue-router'
 import HelloWorld from './components/HelloWorld.vue'
+
+const surfacingPortfolio = 'https://drive.google.com/file/d/117Rth24HJ_2CoFY_BauEI6MOasxuErMR/view?usp=sharing';
 </script>
 
 <template>
   <header>
-    <img alt="gravatar" class="avatar" src="https://www.gravatar.com/avatar/c2fcdf3b2f5771ed553bc56a50c2bfba?s=500" width="125" height="125" />
+    <img alt="gravatar" class="avatar" src="https://www.gravatar.com/avatar/c2fcdf3b2f5771ed553bc56a50c2bfba?s=500"
+      width="125" height="125" />
 
     <div class="wrapper">
       <HelloWorld msg="You did it!" />
@@ -14,6 +17,7 @@ import HelloWorld from './components/HelloWorld.vue'
         <RouterLink to="/">Home</RouterLink>
         <RouterLink to="/about">About</RouterLink>
         <RouterLink to="/mobile-apps">Mobile Apps</RouterLink>
+        <a :href="surfacingPortfolio" target="_blank">Surfacing</a>
       </nav>
     </div>
   </header>
