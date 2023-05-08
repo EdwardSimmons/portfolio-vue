@@ -16,7 +16,7 @@ export default class AppIcon extends Vue {
 </script>
 
 <template>
-    <div class="app-icon-container">
+    <div class="app-icon-container shadow-md">
         <img :src="img" alt="app-icon" :class="classes" />
     </div>
 </template>
