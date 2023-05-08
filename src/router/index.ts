@@ -1,5 +1,5 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import Home from '@/views/Home/Home.vue'
+import Home from '@/views/Home.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -17,12 +17,12 @@ const router = createRouter({
     {
       path: '/mobile-apps',
       name: 'mobile-apps',
-      component: () => import('../views/Mobile/Mobile.vue')
+      component: () => import('../views/Mobile.vue')
     },
     {
       path: '/surfacing',
       name: 'surfacing',
-      component: () => import('../views/Surfacing/Surfacing.vue')
+      component: () => import('../views/Surfacing.vue')
     }
   ]
 })

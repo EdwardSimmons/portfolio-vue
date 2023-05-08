@@ -1,3 +1,4 @@
+<script lang="ts">
 import { Component, Vue } from 'vue-facing-decorator'
 import TheWelcome from '@/components/TheWelcome.vue'
 
@@ -11,17 +12,12 @@ import TheWelcome from '@/components/TheWelcome.vue'
     },
 })
 export default class Home extends Vue {
-
-    //This is a vue reactive property.
-    text = 'Example code'
-
-    //This is a vue component method.
-    method() {
-        console.log(this.text)
-    }
-
-    //This is a vue component lifecycle hook.
-    mounted() {
-        this.method()
-    }
+    //
 }
+</script>
+
+<template>
+    <main>
+        <TheWelcome />
+    </main>
+</template>

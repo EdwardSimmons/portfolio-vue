@@ -1,10 +1,3 @@
-<!-- AppIcon.vue -->
-<template>
-    <div class="app-icon-container">
-        <img :src="img" alt="app-icon" :class="classes" />
-    </div>
-</template>
-
 <script lang="ts">
 import { Component, Prop, Vue } from 'vue-facing-decorator'
 
@@ -22,7 +15,13 @@ export default class AppIcon extends Vue {
 }
 </script>
 
-<style scoped lang="scss">
+<template>
+    <div class="app-icon-container">
+        <img :src="img" alt="app-icon" :class="classes" />
+    </div>
+</template>
+
+<style scoped>
 .app-icon-container {
     background-color: white;
     height: 4rem;
