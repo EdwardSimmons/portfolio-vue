@@ -2,7 +2,6 @@
 import { RouterLink, RouterView } from 'vue-router'
 import HelloWorld from './components/HelloWorld.vue'
 
-const surfacingPortfolio = 'https://drive.google.com/file/d/117Rth24HJ_2CoFY_BauEI6MOasxuErMR/view?usp=sharing';
 </script>
 
 <template>
@@ -17,7 +16,7 @@ const surfacingPortfolio = 'https://drive.google.com/file/d/117Rth24HJ_2CoFY_Bau
         <RouterLink to="/">Home</RouterLink>
         <RouterLink to="/about">About</RouterLink>
         <RouterLink to="/mobile-apps">Mobile Apps</RouterLink>
-        <a :href="surfacingPortfolio" target="_blank">Surfacing</a>
+        <RouterLink to="/surfacing">Surfacing</RouterLink>
       </nav>
     </div>
   </header>

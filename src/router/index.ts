@@ -18,6 +18,11 @@ const router = createRouter({
       path: '/mobile-apps',
       name: 'mobile-apps',
       component: () => import('../views/Mobile/Mobile.vue')
+    },
+    {
+      path: '/surfacing',
+      name: 'surfacing',
+      component: () => import('../views/Surfacing/Surfacing.vue')
     }
   ]
 })
