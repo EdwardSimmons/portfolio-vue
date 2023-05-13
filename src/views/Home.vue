@@ -1,19 +1,6 @@
-<script lang="ts">
-import { Component, Vue } from 'vue-facing-decorator'
+<script setup lang="ts">
 import TheWelcome from '@/components/TheWelcome.vue'
 
-
-@Component({
-    components: {
-        TheWelcome,
-    },
-    options: {
-        name: 'Home'
-    },
-})
-export default class Home extends Vue {
-    //
-}
 </script>
 
 <template>

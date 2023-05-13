@@ -1,18 +1,16 @@
-<script lang="ts">
-import { Component, Prop, Vue } from 'vue-facing-decorator'
+<script setup lang="ts">
+import { computedEager } from '@vueuse/core'
 
-@Component({})
-export default class AppIcon extends Vue {
-    @Prop({ default: '' })
-    public img!: string;
+const props = defineProps<{
+    img: string
+}>();
 
-    public get classes(): Record<string, boolean> {
-        return {
-            'app-icon': true,
-            'memoria': this.img.includes('memoria')
-        }
+const classes = computedEager(() => {
+    return {
+        'app-icon': true,
+        'memoria': props.img.includes('memoria')
     }
-}
+});
 </script>
 
 <template>
