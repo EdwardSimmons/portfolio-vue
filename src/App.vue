@@ -1,17 +1,14 @@
 <script setup lang="ts">
 import { RouterLink, RouterView } from 'vue-router'
-import HelloWorld from './components/HelloWorld.vue'
+import SolarSystem from './views/SolarSystem.vue';
 
 </script>
 
 <template>
   <header>
-    <img alt="gravatar" class="avatar" src="https://www.gravatar.com/avatar/c2fcdf3b2f5771ed553bc56a50c2bfba?s=500"
-      width="125" height="125" />
+    <SolarSystem />
 
     <div class="wrapper">
-      <HelloWorld msg="You did it!" />
-
       <nav>
         <RouterLink to="/">Home</RouterLink>
         <RouterLink to="/about">About</RouterLink>
@@ -30,17 +27,10 @@ header {
   max-height: 100vh;
 }
 
-.avatar {
-  display: block;
-  margin: 0 auto 2rem;
-  border-radius: 50%;
-}
-
 nav {
   width: 100%;
   font-size: 12px;
   text-align: center;
-  margin-top: 2rem;
 }
 
 nav a.router-link-exact-active {
@@ -61,30 +51,21 @@ nav a:first-of-type {
   border: 0;
 }
 
-@media (min-width: 1024px) {
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
-  }
+header {
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+}
 
-  .avatar {
-    margin: 0 2rem 0 0;
-  }
+header .wrapper {
+  display: flex;
+  place-items: flex-start;
+  flex-wrap: wrap;
+  width: 100%;
+}
 
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
-
-  nav {
-    text-align: left;
-    margin-left: -1rem;
-    font-size: 1rem;
-
-    padding: 1rem 0;
-    margin-top: 1rem;
-  }
+nav {
+  text-align: center;
+  font-size: 1rem;
 }
 </style>
